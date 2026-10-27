@@ -17,11 +17,12 @@ An interactive, AI-powered educational tutor chatbot web application built with 
 ## 📁 Project Structure
 
 ```text
-.
+frontend
 ├── index.html        # Main frontend HTML structure
 ├── script.js         # Frontend interactive logic & API requests
 ├── style.css          # User interface styles
-├── main.py           # FastAPI application & API endpoints
+backend
+── main.py           # FastAPI application & API endpoints
 ├── services.py       # Groq API interaction & prompt configuration
 ├── config.py         # Environment variable loader
 ├── requirements.txt  # Python backend dependencies
