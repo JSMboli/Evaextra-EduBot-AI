@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaextra EduBot - Your AI Tutor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Include Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
+    <!-- KaTeX JS and Auto-render Extension -->
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="bot-avatar">🎓</div>
+            <div>
+                <h1>Evaextra EduBot AI</h1>
+                <p>Your personal educational tutor</p>
+            </div>
+        </header>
+
+        <div id="chat-messages" class="chat-messages">
+            <div class="message assistant-message">
+                <div class="message-content">
+                    Hello! I'm your Evaextra educational tutor. What topic or concept would you like to explore today?
+                </div>
+            </div>
+        </div>
+
+        <form id="chat-form" class="chat-input-area">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Ask a question or request a topic..." 
+                autocomplete="off" 
+                required
+            >
+            <button type="submit" id="send-button" title="Send message">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

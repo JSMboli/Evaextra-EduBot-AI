@@ -1,0 +1,6 @@
+#!/Users/906845/Library/CloudStorage/OneDrive-hull.ac.uk/Documents/projects/project_new/Mentorship/education_chatbot/backend/venv/bin/python3.11
+import sys
+from uvicorn.main import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
